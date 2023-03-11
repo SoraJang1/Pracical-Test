@@ -23,18 +23,14 @@ package BaekJoon02;
 
 */
 
-import java.util.Scanner;
-
-public class Test02_07_2480 {
+public class Test02_07_2480b {
 	
 	public static void main (String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
-		
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		int c = sc.nextInt();
-		
+		int a = (int)(Math.random()*6+1);
+		int b = (int)(Math.random()*6+1);
+		int c = (int)(Math.random()*6+1);
+
 		if (a==b && b==c) {
 			System.out.println(10000+a*1000);
 		} else if (a==b || a==c) {
@@ -51,6 +47,5 @@ public class Test02_07_2480 {
 				}
 			}
 		}
-
 	}
 }
